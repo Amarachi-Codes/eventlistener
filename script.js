@@ -9,3 +9,13 @@ submit.style.border = '1px solid white'
 submit.addEventListener('click',()=>{
     alert('Thank you for banking with us')
 })
+
+const paragraph = document.querySelector('#paragraph');
+const done = document.querySelector('#done');
+done.addEventListener('click',()=>{
+    if(paragraph.style.textDecoration === 'none'){
+    paragraph.style.textDecoration = 'line-through';
+    }else{
+        paragraph.style.textDecoration = 'none'
+    }
+})
